@@ -19,26 +19,26 @@ cm		santimetre  		1cm = 37.8px = 25.2/64in
 mm		milimetre		1mm = 1/10 santim
 in		inç 			1in = 2.54cm = 96px
 px		piksel			1px = 1/96 inç
-pt		nokta (point)		1pt = 1/72 inç
+pt		punto (point)		1pt = 1/72 inç
 pc		pika (picas)		1pc = 1/6 inç = 12pt
 Q		çeyrek milim		1Q  = 1/40 santim
 
-em		Font size of the parent, in the case of typographical properties like font-size, and font size of the element itself, in the case of other properties like width.
+em		İlk Üst elementin font boyutuna göre hareket eder.div font boyutu 16px olsun, içinde p elementi 2em yani 32px olur. M harfinin genişliği ölçü için referans olarak alınır. 
 ex		Kullanılan fontun küçük harf "x" yüksekliği.
 ch		Kullanılan fontun "O" (SIFIR, U+0030) karakterinin genişliği.
-rem		Relative to the font-size of the root (e.g. the <html> element). “rem” = “root em”
-lh		Line height of the element.
-rlh		Line height of the root element. When used on the font-size or line-height properties of the root element, it refers to the properties' initial value.
-vw	  	Relative to the width of viewport. 1vw = 1/100 of the viewport’s width.
-vh	  	Relative to the height of the viewport (window or app size). 1vh = 1/100 of the viewport’s height
-vmin            Relative to viewport’s smaller dimension (e.g. for portrait orientation, the width is smaller than the height so it’s relative to the width). 1vmin = 1/100 of viewport’s smaller dimension.
-vmax            Relative to viewport’s larger dimension (e.g. height for portrait orientation). 1vmax = 1/100 of viewport’s larger dimension.
+rem		Root em olarak düşünebilirsiniz. em birimiyle aynı mantıkta çalışır. Tek farkı rem birimi <html> etiketini baz alarak çalışır.
+lh		Satır yüksekliği
+rlh		Root satır yüksekliği.
+vw	  	Tarayıcı penceresinin % genişliği. 
+vh	  	Tarayıcı penceresinin % yüksekliği.
+vmin    Tarayıcı penceresinin o anda vw veya vh uzunluklarından en küçük olanına göre değişir.
+vmax    Tarayıcı penceresinin o anda vw veya vh uzunluklarından en büyük olanına göre değişir.
 vb		1% of the size of the initial containing block in the direction of the root element's block axis.
 vi		1% of the size of the initial containing block in the direction of the root element's inline axis.
 svw,svh         1% of the small viewport's width and height, respectively.
 lvw,lvh         1% of the large viewport's width and height, respectively.
 dvw,dvh         1% of the dynamic viewport's width and height, respectively.
-%		Relative to the parent element’s value for that property
+%		Yüzde. Üst elementi baz alır.
 
 1 cm            37.8px
 1 mm            3.78px
