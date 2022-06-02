@@ -9,36 +9,47 @@
 </head>
 <body>
     <u>
-        <li><a href="css_units.html">Ana Sayfa</a></li>
+        <li><a href="/">Ana Sayfa</a></li>
     </u>
 
     <pre>
 
 
-cm		santimetre  				1cm = 37.8px = 25.2/64in
-mm		milimetre					1mm = 1/10th of 1cm
-in		inç 						1in = 2.54cm = 96px
-px		piksel						1px = 1/96th of 1in
-pt		point						1pt = 1/72th of 1in
-pc		picas						1pc = 1/6th of 1in , 12pt
-Q		Quarter-millimeters			1Q  = 1/40th of 1cm
+cm		santimetre  		1cm = 37.8px = 25.2/64in
+mm		milimetre		1mm = 1/10 santim
+in		inç 			1in = 2.54cm = 96px
+px		piksel			1px = 1/96 inç
+pt		nokta (point)		1pt = 1/72 inç
+pc		pika (picas)		1pc = 1/6 inç = 12pt
+Q		çeyrek milim		1Q  = 1/40 santim
 
 em		Font size of the parent, in the case of typographical properties like font-size, and font size of the element itself, in the case of other properties like width.
-ex		Relative to height of the current font’s lowercase “x”.
-ch		The advance measure (width) of the glyph "0" of the element's font. relative to width of the "0" (ZERO, U+0030) glyph in the element's font
+ex		Kullanılan fontun küçük harf "x" yüksekliği.
+ch		Kullanılan fontun "O" (SIFIR, U+0030) karakterinin genişliği.
 rem		Relative to the font-size of the root (e.g. the <html> element). “rem” = “root em”
 lh		Line height of the element.
 rlh		Line height of the root element. When used on the font-size or line-height properties of the root element, it refers to the properties' initial value.
 vw	  	Relative to the width of viewport. 1vw = 1/100 of the viewport’s width.
 vh	  	Relative to the height of the viewport (window or app size). 1vh = 1/100 of the viewport’s height
-vmin  	Relative to viewport’s smaller dimension (e.g. for portrait orientation, the width is smaller than the height so it’s relative to the width). 1vmin = 1/100 of viewport’s smaller dimension.
-vmax  	Relative to viewport’s larger dimension (e.g. height for portrait orientation). 1vmax = 1/100 of viewport’s larger dimension.
+vmin            Relative to viewport’s smaller dimension (e.g. for portrait orientation, the width is smaller than the height so it’s relative to the width). 1vmin = 1/100 of viewport’s smaller dimension.
+vmax            Relative to viewport’s larger dimension (e.g. height for portrait orientation). 1vmax = 1/100 of viewport’s larger dimension.
 vb		1% of the size of the initial containing block in the direction of the root element's block axis.
 vi		1% of the size of the initial containing block in the direction of the root element's inline axis.
-svw,svh	1% of the small viewport's width and height, respectively.
-lvw,lvh	1% of the large viewport's width and height, respectively.
-dvw,dvh	1% of the dynamic viewport's width and height, respectively.
+svw,svh         1% of the small viewport's width and height, respectively.
+lvw,lvh         1% of the large viewport's width and height, respectively.
+dvw,dvh         1% of the dynamic viewport's width and height, respectively.
 %		Relative to the parent element’s value for that property
+
+1 cm            37.8px
+1 mm            3.78px
+1 in            96px
+1 px            1px
+1 pt            1.33px
+1 pc            16px
+1 q             0.945px
+1 rem           16px
+1 em            16px
+1 %             0,16px
 
 
 
