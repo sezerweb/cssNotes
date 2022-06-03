@@ -1,58 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Css Ölçüler</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <u>
-        <li><a href="/">Ana Sayfa</a></li>
-    </u>
-
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <u>
+        <li>
+          <a href="/">Ana Sayfa</a>
+        </li>
+      </u>
+    </nav>
     <pre>
 
+KESİN ÖLÇÜLER
+cm	santimetre  		
+mm	milimetre		
+in	inç 			
+px	piksel			
+pt	punto (point)		
+pc	pika (picas)		
+Q	çeyrek milim		
 
-cm		santimetre  		1cm = 37.8px = 25.2/64in
-mm		milimetre		1mm = 1/10 santim
-in		inç 			1in = 2.54cm = 96px
-px		piksel			1px = 1/96 inç
-pt		punto (point)		1pt = 1/72 inç
-pc		pika (picas)		1pc = 1/6 inç = 12pt
-Q		çeyrek milim		1Q  = 1/40 santim
+dpi     İnç başına düşen nokta sayısı (Dots per inch). Çözünürlükle alakalı.
+dpcm    Santimetre başına düşen nokta sayısı (Dots per centimeter)
+dppx    Piksel başına düşen nokta sayısı (Dots per pixel) 1dppx = 96dpi
 
-em		İlk Üst elementin font boyutuna göre hareket eder.div font boyutu 16px olsun, içinde p elementi 2em yani 32px olur. M harfinin genişliği ölçü için referans olarak alınır. 
-ex		Kullanılan fontun küçük harf "x" yüksekliği.
-ch		Kullanılan fontun "O" (SIFIR, U+0030) karakterinin genişliği.
-rem		Root em olarak düşünebilirsiniz. em birimiyle aynı mantıkta çalışır. Tek farkı rem birimi <html> etiketini baz alarak çalışır.
-lh		Satır yüksekliği
-rlh		Root satır yüksekliği.
-vw	  	Tarayıcı penceresinin genişliğinin %1i. 
-vh	  	Tarayıcı penceresinin yüksekliği %1i.
-vmin    Tarayıcı penceresinin o anda vw veya vh uzunluklarından en küçük olanına göre değişir.
-vmax    Tarayıcı penceresinin o anda vw veya vh uzunluklarından en büyük olanına göre değişir.
-vb		Kök elemanın blok ekseni yönünde ilk içeren bloğun boyutunun %1'i .
-vi		Kök elemanın satır içi ekseni yönünde ilk içeren bloğun boyutunun %1'i .
-svw,svh         Küçük görüntü alanının sırasıyla genişliğinin ve yüksekliğinin %1'i .
-lvw,lvh         Büyük görüntü alanının sırasıyla genişliğinin ve yüksekliğinin %1'i .
-dvw,dvh         Dinamik görüntü alanının sırasıyla genişliğinin ve yüksekliğinin %1'i .
-%		Yüzde. Üst elementi baz alır.
+hz      Hertz. Sesle ilgili saniye başına devir.
+khz     Kilo Hertz. 1000 hertze eşit. 200hz bas, 6khz tiz sestir.
 
-1 cm            37.8px
-1 mm            3.78px
-1 in            96px
-1 px            1px
-1 pt            1.33px
-1 pc            16px
-1 q             0.945px
-1 rem           16px
-1 em            16px
-1 %             0,16px
+s       Saniye. Animasyonlarda sık kullanılır.
+ms      Milisaniye, 1000 milisaniye 1 saniyeye eşittir
+
+deg     Açı derecesi. Daire 360 dereceye eşittir. 90deg = 100grad = 0.25 turn = 1.57 rad
+grad    Daire 400 gradyana eşittir.
+rad     Daire 2π radyana eşittir.
+turn    Daire 1 turne eşittir
+
+
+GÖRECELİ ÖLÇÜLER
+%       Yüzde. Üst elementin yüzdesini baz alır.
+em	Bir üst elementin font boyutuna göre hareket eder. Katmanlı etkiye sahiptir. div font boyutu 16px olsun, içinde p elementi 2em yani 32px olur. p içinde span 2em ise 64px olur. 
+rem	Root em olarak düşünebilirsiniz. em birimiyle aynı mantıkta çalışır. Tek farkı rem birimi "html" etiketini baz alarak çalışır. Katmanlı etkisi yoktur.
+
+ex	Kullanılan fontun küçük harf "x" yüksekliği.
+rex	Rootta kullanılan fontun küçük harf "x" yüksekliği.
+ch	Kullanılan fontun "O" (SIFIR, U+0030) karakterinin genişliği.
+rch	Rootta kullanılan fontun "O" (SIFIR, U+0030) karakterinin genişliği.
+cap     Kullanılan fontun büyük harfin nominal yüksekliği
+rcap    Rootta kullanılan fontun büyük harfin nominal yüksekliği
+ic	Kullanılan fontun "水" (CJK , U+6C34) karakterinin genişliği.
+ric	Rootta kullanılan fontun "水" (CJK , U+6C34) karakterinin genişliği.
+
+vh      Tarayıcı penceresinin görünüm alan yüksekliğinin %1'i. Mümkün olan en büyük görüntü alanı yüksekliği. 
+svh     Mümkün olan en küçük görüntü alanı yüksekliğinin %1'i, kullanıcı aracısı tarafından tüm arabirim öğelerini hariç tutar. vh birimi, bir mobil tarayıcıyla birlikte gelen adres çubuğunu içerir. 
+lvh     Kullanıcı tarafından görülebilen mümkün olan en büyük görüntü alanı yüksekliğini yansıtır. 
+dvh     Bu birim, vh biriminden farklı olarak kullanıcı aracısının arabirimini hariç tutar ve geçerli görüntü alanı yüksekliği değiştikçe güncellenir.
+
+vw      Tarayıcı penceresinin görünüm alan genişliğinin %1'i. Kaydırma çubuğu dahil olabiliyor. 
+svw     Kullanıcı tarafından görülebilen mümkün olan en küçük görüntü alanı genişliğini yansıtır. Bu birimin değeri statiktir 
+lvw     Kullanıcı tarafından görülebilen mümkün olan en büyük görüntü alanı genişliğini yansıtır. Birim svw gibi, bu birimin değeri statiktir ve değişmez.
+dvw     Birim dvw , kullanıcı tarafından görülebilen mevcut görüntü alanı genişliğini yansıtır. Bu değer dinamiktir ve dolayısıyla mevcut görüntü alanı genişliğine göre değişecektir.
+
+vmin    vh ve vw birimleri arasındaki en küçük değeri seçer. Kaydırma çubuğu dahil.
+svmin   svh ve svw birimleri arasındaki en küçük değeri seçer.
+lvmin   lvh ve lvw birimleri arasındaki en küçük değeri seçer.
+dvmin   dvh ve dvw birimleri arasındaki en küçük değeri seçer.
+
+vmax    vh ve vw birimleri arasındaki en büyük değeri seçer. Kaydırma çubuğu dahil.
+svmax   svh ve svw birimleri arasındaki en büyük değeri seçer.
+lvmax   lvh ve lvw birimleri arasındaki en büyük değeri seçer.
+dvmaks   dvh ve dvw birimleri arasındaki en büyük değeri seçer.
+
+vi      Satır içi yönde görünümün boyutunu ifade eder. Tipik İngilizce metin için satır içi yön genişliği %1'i. Çince'de tam tersi. 
+svi     Satır içi yönde görünümün mümkün olan en küçük boyutunu ifade eder.
+lvi     Satır içi yönde görünümün mümkün olan en büyük boyutunu ifade eder.
+dvi     Görünümün satır içi yöndeki mevcut olası boyutunu ifade ede.
+
+vb      Görünüm alanının blok yönündeki boyutunu ifade eder. Tipik İngilizce metin için blok yönü yüksekliği %1'i. Çince'de tam tersi. 
+svb     Görünümün blok yönündeki olası en küçük boyutunu ifade eder
+lvb     Görünümün blok yönünde mümkün olan en büyük boyutunu ifade eder.
+dvb     Görünümün blok yönündeki mevcut boyutunu ifade eder.
+
+lh      Satır yüksekliği
+rlh     Root satır yüksekliği.
+
+
+PİXEL KARŞILIKLARI
+1 cm    37.8px
+1 mm    3.78px
+1 in    96px
+1 px    1px
+1 pt    1.33px
+1 pc    16px
+1 q     0.945px
+1 rem   16px
+1 em    16px
+1 %     0,16px
 
 
 
     </pre>
-</body>
+
+
+    <p> Bir mobil görünüm alanında bir klavye göründüğünde, birimin değeri vh değişir.</p>
+    <p> Görünüm alanı genişlik birimleri kaydırma çubuğunun genişliğini içerdiğinden vmin ve vmax gibi birimlerin yeniden hesaplanması gerekir.</p>
+  </body>
 </html>
